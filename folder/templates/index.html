@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ML Exam Score Predictor</title>
+</head>
+<body>
+
+<h2>🎓 Exam Score Prediction</h2>
+
+<form action="/predict" method="post">
+
+Hours Studied: <input type="number" name="Hours_Studied"><br>
+Attendance: <input type="number" name="Attendance"><br>
+Parental Involvement: <input type="number" name="Parental_Involvement"><br>
+Access to Resources: <input type="number" name="Access_to_Resources"><br>
+Extracurricular Activities: <input type="number" name="Extracurricular_Activities"><br>
+Sleep Hours: <input type="number" name="Sleep_Hours"><br>
+Previous Scores: <input type="number" name="Previous_Scores"><br>
+Motivation Level: <input type="number" name="Motivation_Level"><br>
+Internet Access: <input type="number" name="Internet_Access"><br>
+Tutoring Sessions: <input type="number" name="Tutoring_Sessions"><br>
+Family Income: <input type="number" name="Family_Income"><br>
+Teacher Quality: <input type="number" name="Teacher_Quality"><br>
+School Type: <input type="number" name="School_Type"><br>
+Peer Influence: <input type="number" name="Peer_Influence"><br>
+Physical Activity: <input type="number" name="Physical_Activity"><br>
+Learning Disabilities: <input type="number" name="Learning_Disabilities"><br>
+Parental Education Level: <input type="number" name="Parental_Education_Level"><br>
+Distance from Home: <input type="number" name="Distance_from_Home"><br>
+Gender: <input type="number" name="Gender"><br><br>
+
+<input type="submit" value="Predict">
+
+</form>
+
+<h3>{{ prediction_text }}</h3>
+
+</body>
+</html>
